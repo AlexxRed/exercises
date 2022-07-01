@@ -20,7 +20,7 @@ export default class Counter extends Component {
 
     handleCounterButtonClick(event) {
         this.setState({
-            counterValue: ++this.state.counterValue // тут спецом маленька помилка архітектурна - мутація стейта, так робить не можна, краще this.state.counterValue + 1
+            counterValue: ++this.state.counterValue // маленька помилка архітектурна - мутація стейта, так робить не можна, краще this.state.counterValue + 1
         });
     }
 
